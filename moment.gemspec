@@ -10,5 +10,5 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/sugarcoded/moment'
   s.add_dependency(%q<httparty>, ['~> 0.8.0'])
   s.add_dependency(%q<rspec>,     ["~> 2.5"])
-  s.add_dependency(%q<vcr>,     ["~> 1.11.3"])
+  s.add_dependency(%q<vcr>,     ["~> 1.11.0"])
 end
