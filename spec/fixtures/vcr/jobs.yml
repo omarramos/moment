@@ -1,0 +1,398 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: https://momentapp.com:443/jobs.json?apikey=3QVVwmAkZ93h_vQhLlrA
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 16:07:19 GMT
+      content-type:
+      - application/json; charset=utf-8
+      etag:
+      - ! '"388ee6e1527329fc03dafb82129fffce"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      x-runtime:
+      - '0.109930'
+      content-length:
+      - '57'
+      x-varnish:
+      - '981535064'
+      age:
+      - '0'
+      via:
+      - 1.1 varnish
+    body: ! "{\n  \"success\":{\n    \"jobs\":[\"pOVoggWm\", \"G8RqCuTy\"]\n  }\n}"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://momentapp.com:443/jobs.json?apikey=3QVVwmAkZ93h_vQhLlrA&job%5Bat%5D=2100-01-31T18:36:21&job%5Bmethod%5D=POST&job%5Buri%5D=http://www.test.com
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 16:16:18 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      etag:
+      - ! '"6ec15d7e46d5b0f8669ce17697ba1a91"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      set-cookie:
+      - _moment=e92cddd29c95bbd40b19e7db93b26eb8; path=/; HttpOnly
+      x-runtime:
+      - '0.125012'
+    body: ! "{\n  \"success\":{\n    \"job\":{\n      \"id\":\"pJUyo9MP\",\n      \"uri\":\"http://www.test.com:80/\",\n
+      \     \"method\":\"POST\",\n      \"at\":\"2100-01-31 22:36:21 -0400\"\n    }\n
+      \ }\n}"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://momentapp.com:443/jobs.json?apikey=3QVVwmAkZ93h_vQhLlrA&job%5Bat%5D=2100-01-31T18:36:21%20-0400&job%5Bmethod%5D=POST&job%5Buri%5D=http://www.test.com
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 16:23:47 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      etag:
+      - ! '"d09ecc120e8311dd95fcb43014d481e6"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      set-cookie:
+      - _moment=3e91552bca01eb5cd466c7c32b3438a9; path=/; HttpOnly
+      x-runtime:
+      - '0.095664'
+    body: ! "{\n  \"success\":{\n    \"job\":{\n      \"id\":\"11zrfPeu\",\n      \"uri\":\"http://www.test.com:80/\",\n
+      \     \"method\":\"POST\",\n      \"at\":\"2100-01-31 18:36:21 -0400\"\n    }\n
+      \ }\n}"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://momentapp.com:443/jobs.json?apikey=3QVVwmAkZ93h_vQhLlrA&job%5Bat%5D=2100-01-31%2018:36:21%20-0400&job%5Bmethod%5D=POST&job%5Buri%5D=http://www.test.com
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 16:24:08 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      etag:
+      - ! '"19eab51790f058e0074a34dec8df95f5"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      set-cookie:
+      - _moment=7d833e391882de76719bb0579b252988; path=/; HttpOnly
+      x-runtime:
+      - '0.144762'
+    body: ! "{\n  \"success\":{\n    \"job\":{\n      \"id\":\"CWVDZFT3\",\n      \"uri\":\"http://www.test.com:80/\",\n
+      \     \"method\":\"POST\",\n      \"at\":\"2100-01-31 18:36:21 -0400\"\n    }\n
+      \ }\n}"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://momentapp.com:443/jobs.json?apikey=3QVVwmAkZ93h_vQhLlrA&job%5Bat%5D=2100-01-31%2018:36:21%20-0400&job%5Bmethod%5D=POST&job%5Buri%5D=http://www.test.com:80
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 16:25:41 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      etag:
+      - ! '"0a21e54b9a95cf01c9cad83450994897"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      set-cookie:
+      - _moment=e27efd34e117826f8ab6e4488e0e7774; path=/; HttpOnly
+      x-runtime:
+      - '0.115554'
+    body: ! "{\n  \"success\":{\n    \"job\":{\n      \"id\":\"v4oD6sry\",\n      \"uri\":\"http://www.test.com:80/\",\n
+      \     \"method\":\"POST\",\n      \"at\":\"2100-01-31 18:36:21 -0400\"\n    }\n
+      \ }\n}"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://momentapp.com:443/jobs.json?apikey=3QVVwmAkZ93h_vQhLlrA&job%5Bat%5D=2100-01-31%2018:36:21%20-0400&job%5Bmethod%5D=POST&job%5Buri%5D=http://www.test.com:80/some_endpoint
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 16:26:05 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      etag:
+      - ! '"53a031144a04c23df1d9ca6c7f3eacff"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      set-cookie:
+      - _moment=563e5f4630b6051e6f8feacc03d1afef; path=/; HttpOnly
+      x-runtime:
+      - '0.167097'
+    body: ! "{\n  \"success\":{\n    \"job\":{\n      \"id\":\"ZtaQiiEd\",\n      \"uri\":\"http://www.test.com:80/some_endpoint\",\n
+      \     \"method\":\"POST\",\n      \"at\":\"2100-01-31 18:36:21 -0400\"\n    }\n
+      \ }\n}"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :put
+    uri: https://momentapp.com:443/jobs/ZtaQiiEd.json?apikey=3QVVwmAkZ93h_vQhLlrA&job%5Bat%5D=2101-01-31%2018:36:21%20-0400&job%5Bmethod%5D=PUT&job%5Buri%5D=http://www.test.com:80/some_endpoint
+    body: !!null 
+    headers:
+      content-length:
+      - '0'
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 16:28:54 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      etag:
+      - ! '"b6888f6790413a2d9e9ec13a225f4ef1"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      x-runtime:
+      - '0.144110'
+    body: ! "{\n  \"success\":{\n    \"job\":{\n      \"id\":\"ZtaQiiEd\",\n      \"uri\":\"http://www.test.com:80/some_endpoint\",\n
+      \     \"method\":\"PUT\",\n      \"at\":\"2101-01-31 18:36:21 -0400\"\n    }\n
+      \ }\n}"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :delete
+    uri: https://momentapp.com:443/jobs/ZtaQiiEd.json?apikey=3QVVwmAkZ93h_vQhLlrA
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 16:31:07 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      etag:
+      - ! '"23a7e78991dd8adaf6985c672abd51fd"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      set-cookie:
+      - _moment=6a48b135eddc6335e40e958be6e19244; path=/; HttpOnly
+      x-runtime:
+      - '0.178733'
+    body: ! "{\n  \"success\":{\n    \"message\":\"Job deleted\"\n  }\n}"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://momentapp.com:443/jobs.json?apikey=3QVVwmAkZ93h_vQhLlrA&job%5Bat%5D=2000-01-31%2018:36:21%20-0400&job%5Bmethod%5D=POST&job%5Buri%5D=http://www.test.com:80/some_endpoint
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 16:37:04 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      etag:
+      - ! '"406bc5bab31a559d8a6714a646b6c777"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      x-runtime:
+      - '0.103302'
+    body: ! "{\n  \"error\":{\"at\":\"Invalid parameter.  Date cannot be in the past.\"}\n}\n"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :delete
+    uri: https://momentapp.com:443/jobs/invalid_job.json?apikey=3QVVwmAkZ93h_vQhLlrA
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 500
+      message: Internal Server Error
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 16:48:02 GMT
+      content-type:
+      - text/html
+      content-length:
+      - '1222'
+      x-runtime:
+      - '0.824224'
+    body: ! "<!DOCTYPE html>\n<html>\n<head>\n  <title>We're sorry, but something
+      went wrong (500)</title>\n  <style type=\"text/css\">\n    body { background-color:
+      #fff; color: #666; text-align: center; font-family: arial, sans-serif; }\n    div.dialog
+      {\n      width: 25em;\n      padding: 0 4em;\n      margin: 4em auto 0 auto;\n
+      \     border: 1px solid #ccc;\n      border-right-color: #999;\n      border-bottom-color:
+      #999;\n    }\n    h1 { font-size: 100%; color: #f00; line-height: 1.5em; }\n
+      \ </style>\n</head>\n\n<body>\n  <!-- This file lives in public/500.html -->\n
+      \ <div class=\"dialog\">\n    <h1>We're sorry, but something went wrong.</h1>\n
+      \   <p>We've been notified about this issue and we'll take a look at it shortly.</p>\n
+      \ </div>\n\n  <script type=\"text/javascript\">\n    var _gaq = _gaq || [];\n
+      \   _gaq.push(['_setAccount', 'UA-20391567-1']);\n    _gaq.push(['_trackPageview']);\n\n
+      \   (function() {\n      var ga = document.createElement('script'); ga.type
+      = 'text/javascript'; ga.async = true;\n      ga.src = ('https:' == document.location.protocol
+      ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n      var
+      s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+      s);\n    })();\n  </script>\n</body>\n</html>\n"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://momentapp.com:443/jobs.json?apikey=3QVVwmAkZ93h_vQhLlrA&job%5Bat%5D=2000-01-31%2018:36:21%20-0400&job%5Bmethod%5D=POST&job%5Buri%5D=invalid%20uri
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 17:02:16 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      etag:
+      - ! '"bee207ff6d47377d743416af5df6198e"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      x-runtime:
+      - '0.199726'
+    body: ! "{\n  \"error\":{\"at\":\"Invalid parameter.  Date cannot be in the past.\",\"uri\":\"Invalid
+      parameter.  Make sure you provide a complete URI that is fully escaped.\",\"uri\":\"Invalid
+      parameter.  Make sure you include a valid HTTP scheme (i.e. http:// or https://).\",\"uri\":\"Invalid
+      parameter.  Make sure you include a valid HTTP host (i.e. www.yourapp.com).\",\"uri\":\"Invalid
+      parameter.  Make sure you include a valid HTTP port (i.e. 80).\"}\n}\n"
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://momentapp.com:443/jobs.json?apikey=3QVVwmAkZ93h_vQhLlrA&job%5Bat%5D=2100-01-31%2018:36:21%20-0400&job%5Bmethod%5D=POST&job%5Buri%5D=invalid%20uri
+    body: !!null 
+    headers: !!null 
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx/0.7.67
+      date:
+      - Tue, 04 Oct 2011 17:03:17 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      etag:
+      - ! '"132b2a6cf349c6a65ce9642776cf72db"'
+      cache-control:
+      - max-age=0, private, must-revalidate
+      x-ua-compatible:
+      - IE=Edge,chrome=1
+      x-runtime:
+      - '0.072906'
+    body: ! "{\n  \"error\":{\"uri\":\"Invalid parameter.  Make sure you provide a
+      complete URI that is fully escaped.\",\"uri\":\"Invalid parameter.  Make sure
+      you include a valid HTTP scheme (i.e. http:// or https://).\",\"uri\":\"Invalid
+      parameter.  Make sure you include a valid HTTP host (i.e. www.yourapp.com).\",\"uri\":\"Invalid
+      parameter.  Make sure you include a valid HTTP port (i.e. 80).\"}\n}\n"
+    http_version: '1.1'
