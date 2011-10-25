@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'moment'
   s.version     = '0.0.1'
-  s.date        = '2011-10-4'
+  s.date        = '2011-10-04'
   s.summary     = "A simple wrapper for the moment api https://momentapp.com/"
   s.description = "A simple wrapper for the moment api https://momentapp.com/"
   s.authors     = ["Omar Ramos"]
